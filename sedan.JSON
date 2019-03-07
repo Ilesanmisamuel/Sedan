@@ -1,0 +1,102 @@
+[
+   {
+      "id": "1",
+      "brand":       "Toyota",
+      "type":        "Corolla",
+      "year":        "2019",
+      "color":       "Grey",
+      "price":       "$19,135",
+      "description": "The 2019 Corolla Comes Standard With Active Safety Features. Steering Wheel Controls. Stylish Design. Proven Reliability. Hands-Free Technology. Available Moonroof. Fun & Versatile.",
+      "pic":         "img/corolla.jpg"
+   },
+   {
+      "id": "2",
+      "brand":       "Toyota",
+      "type":        "Camry",
+      "year":        "2019",
+      "color":       "Black",
+      "price":       "$23,945",
+      "description": "The 2019 camry models push the limits of Camry’s evocative look with unique catamaran-inspired accents and a black sport mesh grille.",
+      "pic":         "img/camry.jpg"
+   },
+   {
+      "id": "3",
+      "brand":       "Nissan",
+      "type":        "Sentra",
+      "year":        "2019",
+      "color":       "Red",
+      "price":       "$19,090",
+      "description": "A Sleek, Aerodynamic Silhouette With An Interior That's A Cut Above. Search All The New 2019 Models. Explore, Build, Price & Locate Today! Bluetooth® Hands-Free. Blind Spot Warning.",
+      "pic":         "img/sentra.jpg"
+   },
+   {
+      "id": "4",
+      "brand":       "Nissan",
+      "type":        "Altima",
+      "year":        "2019",
+      "color":       "Black",
+      "price":       "$22,590",
+      "description": "The 2019 Altima comes standard with an All-Weather Capability You Expect From An SUV.",
+      "pic":         "img/altima.jpg"
+   },
+    {
+      "id": "5",
+      "brand":       "Honda",
+      "type":        "Civic",
+      "year":        "2019",
+      "color":       "Blue",
+      "price":       "$19,435",
+      "description": "The 2019 Honda Civic Sedan impresses with aggressive lines, a sophisticated interior and refined features that stand out from the traditional compact sedan.",
+      "pic":         "img/civic.jpg"
+   },
+    {
+      "id": "6",
+      "brand":       "Honda",
+      "type":        "Accord",
+      "year":        "Black",
+      "color":       "Red",
+      "price":       "$23,720",
+      "description": "Setting the bar for midsize sedans, the 2019 Honda Accord has a sleek technology-integrated interior and restyled sporty exterior.",
+      "pic":         "img/accord.jpg"
+   },
+    {
+      "id": "7",
+      "brand":       "Kia",
+      "type":        "Forte",
+      "year":        "2019",
+      "color":       "Blue",
+      "price":       "$17,790",
+      "description": "The 2019 Kia Forte pairs stylish good looks with a lot of features, making it a compact sedan standout.",
+      "pic":         "img/forte.jpg"
+   },
+    {
+      "id": "8",
+      "brand":       "Kia",
+      "type":        "Optima",
+      "year":        "2019",
+      "color":       "White",
+      "price":       "$22,990",
+      "description": "The all new 2019 Kia Optima sedan provides comfort, versatility, & innovation designed to fit any lifestyle.",
+      "pic":         "img/optima.jpg"
+   },
+    {
+      "id": "9",
+      "brand":       "Mazda",
+      "type":        "Mazda 3",
+      "year":        "2018",
+      "color":       "Black",
+      "price":       "$18,095",
+      "description": "Playful and sophisticated, the 2018 Mazda3 is a fuel-efficient compact that's one of the most fun-to-drive cars in its class.",
+      "pic":         "img/mazda3.jpg"
+   },
+     {
+      "id": "10",
+      "brand":       "Mazda",
+      "type":        "Mazda 6",
+      "year":        "2018",
+      "color":       "Grey",
+      "price":       "$21,950",
+      "description": "The new 2018 Mazda 6 Sports Sedan. Crafted to inspire a more powerful emotion. Born from the hands of craftsmen with a brand new turbocharged engine.",
+      "pic":         "img/mazda6.jpg"
+   }
+]

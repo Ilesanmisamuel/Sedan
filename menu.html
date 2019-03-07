@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="wavy-div">
+    <h1>Sedan Cars</h1>
+  </div>
+  <main>
+    <ul id="menu_items"></ul>
+  </main>
+  
+<script>
+  let xhr = new XMLHttpRequest(),
+      url = "sedan.JSON";
+  
+  xhr.onreadystatechange = function() {
+    if ( xhr.readyState === 4 && xhr.status === 200 ) {
+      var menuItems = JSON.parse( xhr.responseText );
+      buildMenu( menuItems );
+    }
+  };
+  xhr.open( "GET", url, true );
+  xhr.send();
+  
+  function buildMenu( items ) {
+      var output = "";
+      
+      items.forEach( function( item ) {
+          output += "<li class='item'" + "onclick=saveSelection(" + item.id + ");> " +
+                      "<img src=assets/" + item.pic + " />" + 
+                      "<p>" + item.brand + " " + item.type + "</p>" +
+                    "</li>";
+      });
+      
+      document.getElementById( "menu_items" ).innerHTML = output;
+  }
+  
+  function saveSelection(sel){
+    localStorage.setItem( "selected", sel );
+    window.open( "details.html", "_self" );
+  }
+</script>
+
+</body>
+</html>

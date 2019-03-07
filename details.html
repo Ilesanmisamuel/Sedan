@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Details</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="wavy-div">
+    <h1>Car Details</h1>
+      <a class="black" href="menu.html"> Back</a>
+  </div>
+  <main>
+    <ul id="item"></ul>
+  </main>
+  
+<script>
+  let xmlhttp = new XMLHttpRequest(),
+      url = "sedan.JSON";
+    
+  xmlhttp.onreadystatechange = function() {
+    if ( xmlhttp.readyState === 4 && xmlhttp.status === 200 ) {
+      var menuItems = JSON.parse( xmlhttp.responseText );
+      buildItem( menuItems );
+    }
+  };
+  xmlhttp.open( "GET", url, true );
+  xmlhttp.send();
+  
+  function buildItem( items ) {
+    var output = "",
+        selectedID = localStorage.getItem( "selected" );
+    
+    items.forEach( function( item ) {
+      if ( selectedID == item.id ) {
+          output =  "<li class='item'>" +
+              "<h3>" + item.brand + " " + item.type + "</h3>" + 
+              "<img class='pic' src=assets/" + item.pic +" />" +
+              "<p>Year: " + item.year + "</p>" + 
+              "<p>Price: " + item.price + "</p>" + 
+              "<p>Description: " + item.description + "</p>" + 
+              "<p>Car Color: " + item.color + " color. </p>" +
+            "</li>";
+      }
+    });
+    
+    document.getElementById( "item" ).innerHTML = output;
+  }
+</script>
+
+</body>
+</html>
