@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: -2rem;
+    background-color: AliceBlue;
+}
+
+
+#homeImg{
+    width: 95%;
+}
+
+#homeH2{
+    border: 3px solid DeepSkyBlue;
+    padding: 0.3em;
+}
+
+#homeBorder{
+  border: 3px solid DeepSkyBlue;
+  padding: 0.5em;
+  width: 60%;
+  list-style-type: none;
+  margin: 1em auto 0;
+  text-align: center;
+background-color: white;
+}
+
+/*Styling for Header Starts Here*/
+.wavy-div{
+  background: DeepSkyBlue ;
+  min-height: 90px;
+  position: relative;
+}
+.wavy-div::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 20px;
+  background-size: 20px 40px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, AliceBlue 13px)
+}
+
+#navback{
+  display: block;
+  text-align: center;
+  color: white;
+  border: 3px solid DeepSkyBlue;
+  background-color: DeepSkyBlue;
+  padding: 0.5em;
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+/*Styling for Header Ends Here*/
+
+h1 {
+  padding: 1em;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+  color: white;
+}
+.back {
+  display: inline-block;
+  width: 33.3vw;
+}
+
+
+#homelink {
+  color: DeepSkyBlue ;
+}
+
+ul {
+  padding: 0;
+}
+
+
+li.item { 
+  border: 3px solid DeepSkyBlue;
+  padding: 0.5em;
+  width: 50%;
+  list-style-type: none;
+  margin: 1em auto 0;
+  text-align: center;
+  background-color: white;
+}
+
+li.item p{
+ border: 3px solid DeepSkyBlue;
+ color: DeepSkyBlue ;
+ padding: 0.5em;
+}
+
+li.item img {
+	padding: 1em;
+	max-width: 90%;
+	max-height: 325px;
+}

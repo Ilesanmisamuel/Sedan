@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="wavy-div">
-    <h1>Sedan Cars</h1>
+  <h1>Sedan Cars</h1>
   </div>
   <main>
     <ul id="menu_items"></ul>
@@ -31,7 +31,7 @@
       var output = "";
       
       items.forEach( function( item ) {
-          output += "<li class='item'" + "onclick=saveSelection(" + item.id + ");> " +
+          output += "<li class='item'" + " onclick=saveSelection(" + item.id + ");> " +
                       "<img src=assets/" + item.pic + " />" + 
                       "<p>" + item.brand + " " + item.type + "</p>" +
                     "</li>";
@@ -45,6 +45,6 @@
     window.open( "details.html", "_self" );
   }
 </script>
-
+<a id="navback" href="index.html">Back</a>  
 </body>
 </html>
